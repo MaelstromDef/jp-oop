@@ -87,6 +87,8 @@ public class PlayerController : MonoBehaviour
     {
         Score += value;
         UpdateScoreboard();
+
+        if (Score >= 10) SceneController.ToTitle();
     }
 
     void UpdateScoreboard()
