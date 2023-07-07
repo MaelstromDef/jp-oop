@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+// ABSTRACTION
+// lots and lots of abstraction in this class, just look past the start and fixed update methods.
 public class PlayerController : MonoBehaviour
 {
     [Header("Values")]
@@ -83,6 +85,7 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
+    // ENCAPSULATION
     public void CollectCoin(float value)
     {
         Score += value;
